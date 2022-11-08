@@ -1,7 +1,7 @@
 ## Requirment skill
-linux
-git
-CI/CD
+- linux
+- git
+- CI/CD
 
 ### What is Jenkins?
 Jenkins is an open source CI/CD and deployment automation software DevOps tool writeen in the **Java** programming language
@@ -15,4 +15,17 @@ sudo apt install openjdk-11-jdk -y
 sudo apt install jenkins -y
 ```
 
-### 
+### Create Project
+- New item
+- Name: firstproject
+- Select Freestyle Project
+- General:
+    - GitHub Project
+    - Throttle builds
+    - Source Code Management
+        - Add github creds
+- Build Triggers
+    - Github hook trigger for GITScm pooling
+    - Pool SCM (check crontab guru)
+- Build Env
+- Build    
